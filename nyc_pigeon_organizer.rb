@@ -6,11 +6,9 @@ def nyc_pigeon_organizer(data)
         if !new_hash.keys.include?(name)
           new_hash[name] = {}
         end
-
-          if !new_hash[name].keys.include?(data_type)
+        if !new_hash[name].keys.include?(data_type)
             new_hash[name][data_type] = []
-          end
-
+        end
            new_hash[name][data_type] = new_hash[name][data_type]<<info.to_s
       end
     end
